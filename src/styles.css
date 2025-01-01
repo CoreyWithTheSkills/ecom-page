@@ -59,6 +59,108 @@ nav img{
   width: 22rem;  /* Set the width of the menu */
   height: 100vh;
   }
+
+  @media (max-width: 483px) {
+    #nav-list {
+      display: none; /* Hidden by default */
+      list-style-type: none; /* Remove bullets */
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      z-index: 20;
+      position: fixed; /* Fix to the viewport */
+      top: 0; /* Align to the top */
+      right: 30%; /* Align to the right edge */
+      width: 22rem; /* Adjust the width of the menu */
+      height: 100vh; /* Full viewport height */
+    }
+  }
+
+  
+  @media (max-width: 450px) {
+    #nav-list {
+      display: none; /* Hidden by default */
+      list-style-type: none; /* Remove bullets */
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      z-index: 20;
+      position: fixed; /* Fix to the viewport */
+      top: 0; /* Align to the top */
+      right: 25%; /* Align to the right edge */
+      width: 22rem; /* Adjust the width of the menu */
+      height: 100vh; /* Full viewport height */
+    }
+  }
+
+  @media (max-width: 415px) {
+    #nav-list {
+      display: none; /* Hidden by default */
+      list-style-type: none; /* Remove bullets */
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      z-index: 20;
+      position: fixed; /* Fix to the viewport */
+      top: 0; /* Align to the top */
+      right: 20%; /* Align to the right edge */
+      width: 22rem; /* Adjust the width of the menu */
+      height: 100vh; /* Full viewport height */
+    }
+  }
+
+  
+  @media (max-width: 390px) {
+    #nav-list {
+      display: none; /* Hidden by default */
+      list-style-type: none; /* Remove bullets */
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      z-index: 20;
+      position: fixed; /* Fix to the viewport */
+      top: 0; /* Align to the top */
+      right: 28%; /* Align to the right edge */
+      width: 18rem; /* Adjust the width of the menu */
+      height: 100vh; /* Full viewport height */
+    }
+  }
+
+  
+  @media (max-width: 350px) {
+    #nav-list {
+      display: none; /* Hidden by default */
+      list-style-type: none; /* Remove bullets */
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      z-index: 20;
+      position: fixed; /* Fix to the viewport */
+      top: 0; /* Align to the top */
+      right: 23%; /* Align to the right edge */
+      width: 18rem; /* Adjust the width of the menu */
+      height: 100vh; /* Full viewport height */
+    }
+  }
+
+  @media (max-width: 320px) {
+    #nav-list {
+      display: none; /* Hidden by default */
+      list-style-type: none; /* Remove bullets */
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      z-index: 20;
+      position: fixed; /* Fix to the viewport */
+      top: 0; /* Align to the top */
+      right: 20%; /* Align to the right edge */
+      width: 18rem; /* Adjust the width of the menu */
+      height: 100vh; /* Full viewport height */
+    }
+  }
+  
+  
+  
   
   .overlay {
     position: fixed;
