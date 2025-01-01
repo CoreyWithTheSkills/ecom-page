@@ -106,7 +106,11 @@ nextImage(): void {
   }
 
   checkout(): void {
-    alert('Proceeding to checkout...');
+    if (this.cartItems.length === 0) {
+      alert('Your cart is empty!');
+    } else {
+      alert('Proceeding to checkout...');
+    }
   }
 
   removeItem(itemToRemove: any): void {
@@ -122,4 +126,7 @@ nextImage(): void {
       }
     }
   }
+
+
+  
 }
