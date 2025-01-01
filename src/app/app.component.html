@@ -8,27 +8,32 @@
 
   
 <nav>
+  <!-- Overlay background -->
+  <div *ngIf="isMenuOpen" class="overlay" (click)="closeMenu()"></div>
 
   <div class="nav-left-side">
-        <!-- Hamburger button (hidden on larger screens) -->
-        <img src="icon-menu.svg" alt="" class="hamburger" id="hamburger" (click)="toggleMenu()"> 
-        <img src="logo.svg" alt="">
+    <!-- Hamburger button (hidden on larger screens) -->
+    <img src="icon-menu.svg" alt="" class="hamburger" id="hamburger" (click)="toggleMenu()">
+    <img src="logo.svg" alt="">
   </div>
 
   <!-- Navigation list, show it based on the value of 'isMenuOpen' -->
   <ul [ngClass]="{'active': isMenuOpen}" id="nav-list">
-    <li (click)="closeMenu()">Collections</li>
-    <li (click)="closeMenu()">Men</li>
-    <li (click)="closeMenu()">About</li>
-    <li (click)="closeMenu()">Contact</li>
+    <div class="flex">
+      <img src="icon-close.svg" alt="" (click)="closeMenu()">
+      <li>Collections</li>
+      <li>Men</li>
+      <li>About</li>
+      <li>Contact</li>
+    </div>
   </ul>
 
   <div class="nav-right-side">
     <img src="icon-cart.svg" alt="">
-    <img  id="second-nav-picture" src="image-avatar.png" alt="">
+    <img id="second-nav-picture" src="image-avatar.png" alt="">
   </div>
-  
 </nav>
+
 
 <body>
 
