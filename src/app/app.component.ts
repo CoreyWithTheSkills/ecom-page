@@ -21,4 +21,36 @@ export class AppComponent {
   closeMenu(): void {
     this.isMenuOpen = false;
 }
+
+
+// SlideShow
+images: string[] = [
+  'image-product-1.jpg',
+  'image-product-2.jpg',
+  'image-product-3.jpg',
+  'image-product-4.jpg'
+];
+
+// Track the current index
+currentIndex: number = 0;
+
+// Getter for the current image
+get currentImage(): string {
+  return this.images[this.currentIndex];
+}
+
+// Navigate to the previous image
+prevImage(): void {
+  this.currentIndex =
+    this.currentIndex === 0 ? this.images.length - 1 : this.currentIndex - 1;
+}
+
+// Navigate to the next image
+nextImage(): void {
+  this.currentIndex =
+    this.currentIndex === this.images.length - 1 ? 0 : this.currentIndex + 1;
+}
+
+
+
 }

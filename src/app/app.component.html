@@ -34,9 +34,17 @@
 <body>
 
   <section class="scrolling-picture-of-shoe">
-  <img src="icon-previous.svg" alt="" id="previous-icon">
-   <img src="image-product-1.jpg" alt="" class="body-img">
-   <img src="icon-next.svg" alt="" id="next-icon">
+  <img src="icon-previous.svg" alt="previous" id="previous-icon" (click) ="prevImage()">
+
+
+  <img 
+  [src]="currentImage" 
+  alt="Product Image" 
+  class="body-img"
+ >
+
+
+   <img src="icon-next.svg" alt="next" id="next-icon" (click) ="nextImage()">
   </section>
 
 

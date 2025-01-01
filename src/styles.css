@@ -89,6 +89,7 @@ nav img{
     display: block;
     width: 100%; /* Adjust the width as necessary */
     height: auto;
+    max-width: 400px;
 }
 
 #previous-icon {
@@ -119,3 +120,10 @@ nav img{
     border-radius: 50%;
     cursor: pointer;
 }
+
+.scrolling-picture-of-shoe {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
