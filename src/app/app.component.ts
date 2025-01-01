@@ -1,12 +1,24 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common'; // Import CommonModule
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['../styles.css'],
+  standalone: true, // Ensure the component is standalone
+  imports: [CommonModule], // Import CommonModule here
 })
 export class AppComponent {
-  title = 'ecom-page';
+  // Track whether the menu is open or not
+  isMenuOpen = false;
+
+  // Method to toggle menu state
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  // Method to close the menu when a link is clicked
+  closeMenu(): void {
+    this.isMenuOpen = false;
+}
 }
