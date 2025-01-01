@@ -36,73 +36,90 @@ nextImage(): void {
 
 
 
-  // Track whether the menu is open or not
+  // Menu
   isMenuOpen = false;
 
-  // Method to toggle menu state
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
-  // Method to close the menu when a link is clicked
   closeMenu(): void {
     this.isMenuOpen = false;
   }
 
-  // Counter for the number of shoes
-  counter: number = 1; // Default counter value to 1 (can be 0 or any other value)
+  // Counter and Cart
+  counter: number = 1;
+  originalPrice: number = 250;
+  salePrice: number = 125;
+  cartItems: Array<any> = []; // Empty cart initially
 
-  // Price details
-  originalPrice: number = 250; // Original price (usual price)
-  salePrice: number = 125; // Sale price (discounted price)
-
-  // Cart data (to reflect quantity based on counter)
-  cartItems: Array<any> = [
-    { name: 'Shoe', price: this.salePrice, quantity: this.counter, image: 'image-product-1-thumbnail.jpg' },
-  ];
-
-  // Increment the counter and update the cart's quantity
+  // Increment the counter
   increase(): void {
     this.counter++;
-    this.updateCart(); // Update the cart's quantity based on the counter
   }
 
-  // Decrement the counter and update the cart's quantity
+  // Decrement the counter
   decrease(): void {
     if (this.counter > 0) {
       this.counter--;
-      this.updateCart(); // Update the cart's quantity based on the counter
     }
   }
 
-  // Update cart with the current quantity from the counter
-  updateCart(): void {
-    this.cartItems = [
-      { name: 'Fall Limited Edition Sneakers', price: this.salePrice, quantity: this.counter, image: 'image-product-1-thumbnail.jpg' },
-    ];
+  // Add to Cart
+  addToCart(): void {
+    const existingItemIndex = this.cartItems.findIndex(
+      item => item.name === 'Fall Limited Edition Sneakers'
+    );
+
+    if (existingItemIndex > -1) {
+      // Update the existing item quantity
+      this.cartItems[existingItemIndex].quantity += this.counter;
+    } else {
+      // Add a new item to the cart
+      this.cartItems.push({
+        name: 'Fall Limited Edition Sneakers',
+        price: this.salePrice,
+        quantity: this.counter,
+        image: 'image-product-1-thumbnail.jpg'
+      });
+    }
+   
   }
 
-  // Getter for calculating total price based on the sale price
+  // Calculate total price
   get totalPrice(): number {
-    return this.salePrice * this.counter; // Calculate total price based on the number of shoes
+    return this.cartItems.reduce(
+      (total, item) => total + item.price * item.quantity,
+      0
+    );
   }
 
   // Cart logic
-  isCartOpen: boolean = false; // Track whether the cart modal is open or closed
+  isCartOpen: boolean = false;
 
-  // Toggle the cart modal visibility
   toggleCart(): void {
     this.isCartOpen = !this.isCartOpen;
   }
 
-  // Close the cart modal
   closeCart(): void {
     this.isCartOpen = false;
   }
 
-  // Proceed to checkout (you can redirect to a checkout page or handle it here)
   checkout(): void {
     alert('Proceeding to checkout...');
-    // Redirect to checkout page or handle checkout logic here
+  }
+
+  removeItem(itemToRemove: any): void {
+    const itemIndex = this.cartItems.findIndex(item => item === itemToRemove);
+  
+    if (itemIndex > -1) {
+      // Decrease the quantity of the item
+      this.cartItems[itemIndex].quantity--;
+  
+      // Remove the item from the cart if the quantity reaches 0
+      if (this.cartItems[itemIndex].quantity === 0) {
+        this.cartItems.splice(itemIndex, 1);
+      }
+    }
   }
 }

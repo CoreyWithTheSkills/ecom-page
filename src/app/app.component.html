@@ -45,8 +45,10 @@
                 <p>{{ item.name }}</p>
                 <p>Price: ${{ item.price }} x {{ item.quantity }}</p>
               </div>
+              <img src="icon-delete.svg" alt="" class="delete-icon" (click)="removeItem(item)">
             </li>
           </ul>
+          
           <div class="total-price">
             <p>Total: ${{ totalPrice }}</p>
           </div>
@@ -118,15 +120,13 @@
     <button id="increase" (click)="increase()"><img src="icon-plus.svg" alt=""></button>
   </section>
   
-    <section class="last-button">
-   <button>  
-
-    <img src="icon-cart.svg" alt="">
-    Add to Cart
-
-  </button>
-
+  <section class="last-button">
+    <button (click)="addToCart()">
+      <img src="icon-cart.svg" alt="">
+      Add to Cart
+    </button>
   </section>
+  
 
 </body>
 </html>

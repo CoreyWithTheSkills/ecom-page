@@ -128,6 +128,14 @@ nav img{
   .cart-content{
     width: 75%;
   }
+
+  .delete-icon {
+    width: 16px; /* Adjust the size as needed */
+    height: 16px;
+    cursor: pointer; /* Add a pointer cursor for better UX */
+    margin-left: 10px; /* Add spacing from the cart item info */
+  }
+  
   
   /* Style for cart items */
   .cart-item-info {
@@ -372,10 +380,11 @@ input{
     background-color: hsl(26, 100%, 55%);
     font-weight: 700;
     border: none;
-    border-radius: 10%;
+    border-radius: 5px;
     width: 75%;
     margin-bottom: 2rem;
     font-size: 1.2rem;
+    
   }
 
   .last-button button:hover {
