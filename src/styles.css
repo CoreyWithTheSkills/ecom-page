@@ -15,6 +15,10 @@ nav{
     z-index: 19;
 }
 
+.close-img{
+    cursor: pointer;
+}
+
 .nav-left-side{
     display: flex;
     flex-direction: row;
