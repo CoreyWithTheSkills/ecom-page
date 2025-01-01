@@ -11,9 +11,8 @@
 
   <div class="nav-left-side">
         <!-- Hamburger button (hidden on larger screens) -->
-  <button class="hamburger" id="hamburger" (click)="toggleMenu()">&#9776;
-  </button>
-  <img src="logo.svg" alt="">
+        <img src="icon-menu.svg" alt="" class="hamburger" id="hamburger" (click)="toggleMenu()"> 
+        <img src="logo.svg" alt="">
   </div>
 
   <!-- Navigation list, show it based on the value of 'isMenuOpen' -->
@@ -47,7 +46,58 @@
    <img src="icon-next.svg" alt="next" id="next-icon" (click) ="nextImage()">
   </section>
 
+  <section class="text-area">
+  
+  <h2>SNEAKER COMPANY</h2>
+  <h1>Fall Limited Edition Sneakers</h1>
+  <p>These low-profile sneakers are your perfect 
+    casual wear companion. Featuring a 
+    durable rubber outer sole, they’ll withstand 
+    everything the weather can offer.
+  </p>
+  </section>
 
+  <section class="price-section">
+     
+   <div class="price-left-side">
+    <h3>$125.00</h3>
+    <span>50%</span>
+   </div>
+
+   <div class="price-right-side">
+    <h4>$250.00</h4>
+   </div>
+
+  </section>
+
+  <section class="counter-section">
+    <button id="decrease" (click)="decrease()">
+      <img src="icon-minus.svg" alt="Decrease">
+    </button>
+  
+    <input 
+      type="text" 
+      [value]="counter" 
+      id="counter-number" 
+      readonly 
+    />
+  
+    <button id="increase" (click)="increase()">
+      <img src="icon-plus.svg" alt="Increase">
+    </button>
+
+
+  </section>
+  
+    <section class="last-button">
+   <button>  
+
+    <img src="icon-cart.svg" alt="">
+    Add to Cart
+
+  </button>
+
+  </section>
 
 </body>
 </html>

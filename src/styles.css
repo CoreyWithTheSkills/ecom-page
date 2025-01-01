@@ -39,7 +39,6 @@ nav img{
     cursor: pointer;
     padding: 0;
     outline: none;
-   width: 10vw;
 }
 
 #nav-list {
@@ -127,3 +126,126 @@ nav img{
     align-items: center;
     justify-content: center;
   }
+
+
+  /* Text Area */
+  .text-area{
+    padding: 1.25rem;
+  }
+
+  .text-area h2{
+    color: hsl(219, 9%, 45%);
+    font-size: 1.2rem;
+  }
+
+  .text-area h1{
+    padding-top:1rem;
+    font-size: 2rem;
+  }
+
+  .text-area p{
+    padding-top:1rem;
+    color: hsl(220, 14%, 75%);
+    font-size: 1.2rem;
+  }
+
+
+  .price-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+  }
+
+  .price-left-side{
+    display: flex;
+   align-items: center;
+  }
+
+  .price-section h3{
+    font-size: 2rem;
+  }
+  .price-section span{
+  margin-left: 1rem;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 30%;
+  }
+
+  .price-section h4{
+    color: hsl(219, 9%, 45%);
+    text-decoration: line-through;
+  }
+
+.counter-section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    
+}
+
+.counter-section img{
+    padding: 1rem;
+}
+
+input{
+    text-align: center;
+}
+
+#counter-number {
+    width: 50%; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height for better proportion */
+    text-align: center; /* Center the text inside */
+    border: 2px solid #ccc; /* Add a subtle border */
+    font-size: 1.5rem; /* Adjust font size */
+    background-color: #f5f5f5; /* Light background color */
+    color: #333; /* Dark text color */
+    font-weight: bold; /* Make the text bold for better visibility */
+    border-radius: 8px; /* Round the corners */
+    padding: 8px; /* Add some padding for a better look */
+    transition: all 0.3s ease; /* Smooth transition on focus */
+  }
+
+#counter-number:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove the default focus outline */
+    background-color: #eaf3ff; /* Change background color on focus */
+  }
+
+  #counter-number::placeholder {
+    color: #aaa; /* Optional: Style placeholder if used */
+  }
+
+.last-button{
+    display: flex;
+    justify-content: center;
+}
+
+.last-button img{
+    margin-right: 1rem;
+    height: 100%;
+}
+
+.last-button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    border: none;
+    border-radius: 10%;
+    width: 75%;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .last-button button:hover {
+    background-color: hsl(26, 100%, 45%); /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    cursor: pointer; /* Change cursor to indicate the button is clickable */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  }
+  
+  

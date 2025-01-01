@@ -52,5 +52,18 @@ nextImage(): void {
 }
 
 
+counter: number = 0; // Initialize the counter value
+
+  // Increment the counter
+  increase(): void {
+    this.counter++;
+  }
+
+  // Decrement the counter
+  decrease(): void {
+    if (this.counter > 0) { // Prevent the counter from going below 0
+      this.counter--;
+    }
+  }
 
 }
