@@ -1065,7 +1065,8 @@ nav img{
   display: flex;
   justify-content: center; /* Align content in the center */
   align-items: center; /* Align items vertically in the center */
-  gap: 1rem; /* Space between the buttons and input */
+  gap: 0.5rem; /* Space between the buttons and input */
+  width: 90%;
   
 }
 
@@ -1098,11 +1099,11 @@ button {
 
 
 #decrease{
-  padding: 2rem;
+  padding: 1.25rem;
 }
 
 #increase{
-  padding: 2rem;
+  padding: 1.25rem;
 }
 
 
