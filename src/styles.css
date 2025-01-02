@@ -425,9 +425,13 @@ font-size: 2rem;
 
 .main-image{
         width: 35rem;
-        padding-left: 25rem;
+        border-radius: 2.5rem;
         cursor: pointer;
 
+}
+
+.main-image-container{
+  padding-left: 25rem;
 }
 
 
@@ -581,10 +585,6 @@ font-size: 2rem;
 
 
 @media (max-width: 768px) {
-
-  #counter-number{
-    
-  }
 
   #decrease{
     height: 6vh;
@@ -1103,8 +1103,10 @@ input{
 }
 
 .last-button img{
-    margin-right: 1rem;
+    margin-right: 1.25rem;
     height: 100%;
+    filter: none; /* Reset any inherited filters that might alter colors */
+    outline: none; /* Ensure no outline on the image */
 }
 
 .last-button button{
@@ -1119,9 +1121,12 @@ input{
     width: 75%;
     margin-bottom: 2rem;
     font-size: 1.2rem;
-    color: black;
-    
+    outline: none;
   }
+
+  .last-button button:focus {
+    outline: none; /* Ensure no outline on focus */
+}
 
   .last-button button:hover {
     background-color: hsl(26, 100%, 45%); /* Darker shade on hover */
