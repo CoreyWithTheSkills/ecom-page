@@ -1156,4 +1156,8 @@ button {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
   }
   
+.icon-cart{
+  margin-right: 1rem;
+}
+
 }
