@@ -127,6 +127,10 @@ nextImage(): void {
     }
   }
 
+  get cartItemCount(): number {
+    return this.cartItems.reduce((total, item) => total + item.quantity, 0);
+  }
+
 
   
 }

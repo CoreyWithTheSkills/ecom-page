@@ -32,7 +32,10 @@
 </div>
 
   <div class="nav-right-side">
-    <img src="icon-cart.svg" alt="Cart Icon" (click)="toggleCart()" id="cart-icon"/>
+    <div class="cart-icon-wrapper">
+      <img src="icon-cart.svg" alt="Cart Icon" (click)="toggleCart()" id="cart-icon" />
+      <span class="cart-count" *ngIf="cartItemCount > 0">{{ cartItemCount }}</span>
+    </div>
     <img src="image-avatar.png" alt="" id="class1">
     <div *ngIf="isCartOpen" class="cart-modal">
       <div class="cart-content">
