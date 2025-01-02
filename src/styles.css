@@ -3,7 +3,7 @@
 
 
 
-@media (min-width: 769px){
+@media (min-width: 794px){
 
     *{
         margin: 0;
@@ -11,543 +11,195 @@
         font-family: "Kumbh Sans";
     }
 
+    /* Navigation CSS */
+    /* Navigation CSS */
+    /* Navigation CSS */
+    /* Navigation CSS */
+    /* Navigation CSS */
+    /* Navigation CSS */
+    /* Navigation CSS */
 
-    .cart-content {
-        background: rgb(239, 236, 236);
-        padding: 20px;
-        max-width: 500px;
-        width: 100%;
-        border-radius: 10px;
-        overflow-y: auto;
-        position: absolute;
-        top:96%;
-        right:-0.5%;
-        z-index: 100;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Black box shadow */
-      }
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      padding: 1rem 2rem;
+      border-bottom: 2px solid hsl(219, 9%, 45%, 0.33);
+  }
 
-     .close-cart{
-        position: absolute;
-        right: 5%;
-     }
-      .center-cart-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
+  #nav-list .flex {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+  
+  .nav-left-side {
+      display: flex;
+      align-items: center;
+  }
 
-      .flex-cart{
-        display: flex;
-        padding: 1rem;
-      }
+  #hamburger {
+      display: none; /* Hide hamburger menu */
+  }
 
-      .cart-first-img{
-        width: 4rem;
-        height: 4rem;
-        margin-right: 0.75rem;
-      }
+  #logo {
+      width: 8rem;
+      height: auto;
+      margin-right: 2rem;
+  }
 
-      .delete-icon{
-        width: 7%;
-        height: 7%;
-        margin-left: 0.75rem;
-      }
-
-    .cart-item-info{
-        color: hsl(219, 9%, 45%);
-        font-size: 1.2rem;
-    }
-
-    .checkout-button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-        background-color: hsl(26, 100%, 55%);
-        font-weight: 700;
-        border: none;
-        border-radius: 5px;
-       width: 18rem;
-       margin-top: 2rem;
-        margin-bottom: 2rem;
-        font-size: 1.2rem;
-        color: black;
-        
-    }
-
-    .empty-cart-text{
-        margin-top: 1rem;
-    }
-
-    .cart-h2{
-        margin-top: 1rem;
-    }
-
-    .cart-icon-wrapper {
-        position: relative;
-        display: inline-block;
-      }
+  #nav-list {
+      display: flex;
+      gap: 2rem; /* Add spacing between menu items */
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
       
-      .cart-count {
-        position: absolute;
-        top: -20%;
-        right: 10%;
-        background-color: hsl(26, 100%, 55%); /* Red background for visibility */
-        color: #fff; /* White text */
-        font-size: 0.8rem;
-        font-weight: bold;
-        padding: 0.2rem 0.4rem;
-        border-radius: 50%; /* Circular shape */
-        width: 1.5rem;
-        height: 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for style */
-      }
-      
+  }
 
-    #logo{
-        width: 20rem;
-        height: auto;
-        padding-right: 2rem;
-    }
-    #hamburger{
-        display: none;
-    }
+  #nav-list li {
+      font-size: 1rem;
+      font-weight: 500;
+  }
 
-    nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 90vw;
-        padding: 2rem;
-        transform: translateX(3.5rem);
-        border-bottom: 2px solid hsl(219, 9%, 45%, 0.33);
-        margin-bottom: 2rem;
-    }
+  .first-a {
+      text-decoration: none;
+      color: hsl(219, 9%, 45%);
+      transition: color 0.3s ease;
+  }
 
-    #nav-list{
-        padding-left: 2rem;
-    }
+  .first-a:hover {
+      color: hsl(26, 100%, 55%);
+  }
 
-.first-a{
-    text-decoration: none;
-    color: hsl(219, 9%, 45%);
-    cursor: pointer;
-    transition: color 0.3s ease;
+  .close-img {
+      display: none; /* Hide close icon */
+  }
+
+  .nav-right-side {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+  }
+
+  #cart-icon,
+  #class1 {
+      width: 2.5rem;
+      height: 2.5rem;
+      cursor: pointer;
+  }
+
+  #cart-icon {
+      margin-right: 1rem;
+  }
+
+  #class1:hover {
+      border: 2px solid orange;
+      border-radius: 50%;
+  }
+  
+  
+    /* Navigation CSS */
+    /* Navigation CSS */
+    /* Navigation CSS */
+    /* Navigation CSS */
+    /* Navigation CSS */
+    /* Navigation CSS */
+    /* Navigation CSS */
+
+/* MOBILE SCROLLING PICTURE OF SHOE */
+/* MOBILE SCROLLING PICTURE OF SHOE *//* MOBILE SCROLLING PICTURE OF SHOE */
+.scrolling-picture-of-shoe{
+  display: none;
 }
 
-.first-a:hover{
-    text-decoration: underline;
-    color: hsl(26, 100%, 55%);
-    text-underline-offset: 3.25rem;
+/* MOBILE SCROLLING PICTURE OF SHOE *//* MOBILE SCROLLING PICTURE OF SHOE *//* MOBILE SCROLLING PICTURE OF SHOE */
+
+/* LEFT SIDE OF BODY & RIGHT SIDE *//* LEFT SIDE OF BODY & RIGHT SIDE */
+
+body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 2rem;
+  gap: 1rem; /* Space between left and right sections */
+  overflow-x: hidden;
 }
 
-    .flex{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .flex li{
-        list-style-type: none;
-        padding: 1rem;
-        font-size: 1.25rem;
-        font-weight: 400;
-        color: hsl(219, 9%, 45%);
-    }
-
-    .close-img{
-        display: none;
-    }
-
-    .nav-left-side{
-        display:flex;
-    }
-
-    
-
-    .nav-right-side{
-display: flex;
-flex-direction: row;
-margin-right: 5rem;
-    }
-
-#cart-icon{
-    width: 3rem;
-    height: 3rem;
-    cursor: pointer;
-    margin-right: 2rem;
+.image-gallery {
+  flex: 1;
+  max-width: 50%; /* Take up 50% of the screen */
+  padding-right: 1rem;
 }
 
-    #class1{
-        width: 3rem;
-        height: 3rem;
-        
-        cursor: pointer;
-    }
-
-    #class1:hover{
-        border: 3px solid orange;
-        border-radius: 50%;
-    }
-
- .body-img{
-    width: 35rem;
-    padding-left: 25rem;
- }
-
- body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
-
-
- .price-left-side{
-    display: flex;
- }
-
- .right-container-desktop{
-    padding-left: 10rem;
-    
- }
-
- 
-.counter-and-add-to-cart{
-    display: flex;
-    margin-top: 2rem;
+.main-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
-.counter-section{
-    margin-right: 2rem;
-}
-
-/* Scrolling Picture Of Shoe */
-
-#previous-icon{
-    display: none;
-}
-
-#next-icon{
-    display: none;
-}
-
-.sneaker-comapny-h2{
-    font-size: 1rem;
-    color: hsl(219, 9%, 45%);
-    margin-bottom: 1rem;
-}
-
-h1{
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.right-container-desktop{
+  max-width: 50%;
 }
 
 .text-area{
-    width: 60%;
+  max-width: 50%;
 }
 
-.text-area p{
-    color: hsl(219, 9%, 45%);
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+.main-image {
+  width: 100%; /* Responsive to container */
+  max-width: 500px; /* Limit maximum width */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer;
 }
 
-.price-left-side{
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between thumbnails */
 }
 
-.price-left-side h3{
-font-size: 2rem;
-}
-
-.price-left-side span{
-    margin-left: 1rem;
-    padding: 0.625rem;
-    border-radius: 0.625rem;
-    color: white;
-    background-color: black;
-}
-
-.price-right-side h4{
- text-decoration: line-through;
- color: hsl(219, 9%, 45%);
- font-size: 1.1rem;
-}
-
-.last-button img{
-    margin-right: 1rem;
-    height: 1.5rem;
-}
-
-.last-button button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem;
-    background-color: hsl(26, 100%, 55%);
-    font-weight: 700;
-    border: none;
-    border-radius: 5px;
-   width: 18rem;
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-    color: black;
-    height: 55%;
-    overflow: hidden;
-  }
-
-  .last-button button:hover {
-    background-color: hsl(26, 100%, 45%); /* Darker shade on hover */
-    transform: scale(1.05); /* Slightly enlarge the button */
-    cursor: pointer; /* Change cursor to indicate the button is clickable */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
-  }
-  
-
-  #counter-number {
-    width: 10rem; /* Adjust the width as needed */
-    height: 40px; /* Adjust the height for better proportion */
-    text-align: center; /* Center the text inside */
-    border: 2px solid #ccc; /* Add a subtle border */
-    font-size: 1.5rem; /* Adjust font size */
-    background-color: #f5f5f5; /* Light background color */
-    color: #333; /* Dark text color */
-    font-weight: bold; /* Make the text bold for better visibility */
-    border-radius: 8px; /* Round the corners */
-    padding: 8px; /* Add some padding for a better look */
-    transition: all 0.3s ease; /* Smooth transition on focus */
-  }
-
-  #decrease {
-    width: 55px; /* Adjust the width to fit the icon */
-    height: 60px; /* Ensure it's square */
-    border: 2px solid #ccc; /* Match the counter's border style */
-    background-color: #f5f5f5; /* Light background to match the counter */
-    border-radius: 8px; /* Rounded corners */
-    cursor: pointer; /* Show a pointer cursor for interactivity */
-    transition: all 0.3s ease; /* Smooth hover effect */
-    transform: translateY(-0.15rem);
-  }
-  
-  #decrease:hover {
-    background-color: #e0e0e0; /* Slightly darker background on hover */
-    border-color: #999; /* Darken border on hover */
-  }
-  
-  #decrease:active {
-    background-color: #d6d6d6; /* Even darker background when clicked */
-    transform: scale(0.95); /* Add a subtle press effect */
-  }
-
-  #increase {
-    width: 55px; /* Adjust the width to fit the icon */
-    height: 60px; /* Ensure it's square */
-    border: 2px solid #ccc; /* Match the counter's border style */
-    background-color: #f5f5f5; /* Light background to match the counter */
-    border-radius: 8px; /* Rounded corners */
-    cursor: pointer; /* Show a pointer cursor for interactivity */
-    transition: all 0.3s ease; /* Smooth hover effect */
-    transform: translateY(-0.1rem);
-  }
-  
-  #increase img {
-    width: 16px; /* Adjust icon size */
-    height: 16px;
-  }
-  
-  #increase:hover {
-    background-color: #e0e0e0; /* Slightly darker background on hover */
-    border-color: #999; /* Darken border on hover */
-  }
-  
-
-
-  /* LIGHTHOUSE */  /* LIGHTHOUSE */  /* LIGHTHOUSE */  /* LIGHTHOUSE */  /* LIGHTHOUSE */  /* LIGHTHOUSE */  /* LIGHTHOUSE */
-  /* Make the container take up full width and center the image */
-.scrolling-picture-of-shoe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 80%;  /* Adjust as needed */
-    margin: 0 auto; /* Center the section */
-    height: 80vh; /* Full height of viewport */
-  }
-  
-  /* Style the central image */
-  .body-img {
-    max-width: 100%; /* Image should scale with the container */
-    max-height: 80vh; /* Limit the image height */
-    object-fit: contain; /* Ensures image maintains aspect ratio */
-    transition: transform 0.3s ease; /* Smooth transform transition */
-  }
-  
-  /* Style for previous and next icons */
-  #previous-icon, #next-icon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 50%;
-    padding: 1rem;
-    z-index: 2;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  #previous-icon {
-    left: 10px; /* Position to the left */
-  }
-  
-  #next-icon {
-    right: 10px; /* Position to the right */
-  }
-  
-  /* Hover effect for previous and next buttons */
-  #previous-icon:hover, #next-icon:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Darken the background on hover */
-    transform: translateY(-50%) scale(1.1); /* Slightly increase the button size */
-  }
-  
-  /* Optional: Add transition effect to central image when changing */
-  .body-img:hover {
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
-  }
-  
-.scrolling-picture-of-shoe{
-    display: none;
-}
-
-.main-image{
-        width: 35rem;
-        border-radius: 2.5rem;
-        cursor: pointer;
-
-}
-
-.main-image-container{
-  padding-left: 25rem;
-}
-
-
-.thumbnail-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
-    justify-items: center; /* Centers the thumbnails within each column */
-    margin-top: 20px; /* Space between main image and thumbnails */
-   padding-left: 25rem;
-}
-
-#test{
-    padding-left: 0;
-    gap: 4rem;
-}
-
-/* Individual thumbnail image styling */
 .thumbnail {
-    width: 80px; /* Thumbnail size */
-    height: 80px;
-    object-fit: cover;
-    cursor: pointer;
-    border: 2px solid transparent; /* No border by default */
-    border-radius: 8px;
-    transition: transform 0.3s ease, border 0.3s ease;
-  }
-  
-  /* Hover effect on thumbnails */
-  .thumbnail:hover {
-    transform: scale(1.1); /* Slight zoom effect */
-    border: 2px solid #f60; /* Orange border on hover */
-  }
-  
-  /* Optional: Active thumbnail state when selected */
-  .thumbnail.selected {
-    border: 2px solid #f60; /* Orange border when the image is selected */
-    transform: scale(1.1);
-  }
-  
+  width: 60px; /* Thumbnail size */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.product-details {
+  flex: 1;
+  max-width: 50%; /* Take up 50% of the screen */
+  padding-left: 1rem;
+}
+
+.text-area {
+  margin-bottom: 2rem;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.counter-and-add-to-cart {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
 
 
-/* Lightbox overlay and content */
-.lightbox-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  /* Lightbox content (image and buttons) */
-  .lightbox-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .lightbox-img {
-    max-width: 60vw;
-    max-height: 60vh;
-    border-radius: 1rem;
-  }
-  
-  /* Navigation buttons (previous and next) */
-  .prev-btn,
-  .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-  }
-  
-  .prev-btn {
-   padding: 1.1rem;
-   background-color: white;
-    top: 43%;
-    left: 5%;
-  }
-  
-  .next-btn {
-    padding: 1.1rem;
-    background-color: white;
-    top: 43%;
-    right: 5%;
-  }
-  
-  /* Close button for lightbox */
-  .close-btn {
-    position: absolute;
-    top: -5%;
-    right: 2%;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #f60;
-    height: 2rem;
-    width: 2rem;
-  }
 
+/* LEFT SIDE OF BODY & RIGHT SIDE *//* LEFT SIDE OF BODY & RIGHT SIDE */
 
-  
 
 }
 
@@ -584,7 +236,25 @@ font-size: 2rem;
 
 
 
-@media (max-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 793px) {
 
   #decrease{
     height: 6vh;
