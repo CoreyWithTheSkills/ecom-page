@@ -12,8 +12,81 @@
     }
 
 
+    .cart-content {
+        background: rgb(239, 236, 236);
+        padding: 20px;
+        max-width: 500px;
+        width: 100%;
+        border-radius: 10px;
+        overflow-y: auto;
+        position: absolute;
+        top:96%;
+        right:-0.5%;
+        z-index: 100;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Black box shadow */
+      }
+
+     .close-cart{
+        position: absolute;
+        right: 5%;
+     }
+      .center-cart-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .flex-cart{
+        display: flex;
+        padding: 1rem;
+      }
+
+      .cart-first-img{
+        width: 4rem;
+        height: 4rem;
+        margin-right: 0.75rem;
+      }
+
+      .delete-icon{
+        width: 7%;
+        height: 7%;
+        margin-left: 0.75rem;
+      }
+
+    .cart-item-info{
+        color: hsl(219, 9%, 45%);
+        font-size: 1.2rem;
+    }
+
+    .checkout-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        background-color: hsl(26, 100%, 55%);
+        font-weight: 700;
+        border: none;
+        border-radius: 5px;
+       width: 18rem;
+       margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+        color: black;
+        
+    }
+
+    .empty-cart-text{
+        margin-top: 1rem;
+    }
+
+    .cart-h2{
+        margin-top: 1rem;
+    }
+
     #logo{
-        width: 18rem;
+        width: 20rem;
+        height: auto;
         padding-right: 2rem;
     }
     #hamburger{
@@ -67,12 +140,20 @@ margin-right: 5rem;
 #cart-icon{
     width: 3rem;
     height: 3rem;
+    cursor: pointer;
+    margin-right: 2rem;
 }
 
     #class1{
         width: 3rem;
         height: 3rem;
-        padding-left: 2rem;
+        
+        cursor: pointer;
+    }
+
+    #class1:hover{
+        border: 3px solid orange;
+        border-radius: 50%;
     }
 
  .body-img{
@@ -246,6 +327,7 @@ font-size: 2rem;
     border-color: #999; /* Darken border on hover */
   }
   
+
 
 }
 
