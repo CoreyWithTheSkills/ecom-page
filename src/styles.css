@@ -582,6 +582,18 @@ font-size: 2rem;
 
 @media (max-width: 768px) {
 
+  #counter-number{
+    
+  }
+
+  #decrease{
+    height: 6vh;
+  }
+
+  #increase{
+    height: 6vh;
+  }
+
     .image-galley{
         display: none !important;
     }
