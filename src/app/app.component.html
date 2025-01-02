@@ -76,6 +76,91 @@
 
 <body>
 
+  <section class="image-gallery" id="image-gallery">
+    <!-- Main image that changes based on thumbnail click -->
+    <div class="main-image-container">
+      <img 
+        [src]="currentImage2" 
+        alt="Main Product Image" 
+        class="main-image"
+        (click)="openLightbox()"
+      />
+    </div>
+  
+    <!-- Thumbnail images below the main image -->
+    <div class="thumbnail-container">
+      <img 
+        src="image-product-1-thumbnail.jpg" 
+        alt="Product 1 Thumbnail" 
+        class="thumbnail" 
+        (click)="changeLightboxImage('image-product-1.jpg')"
+      />
+      <img 
+        src="image-product-2-thumbnail.jpg" 
+        alt="Product 2 Thumbnail" 
+        class="thumbnail" 
+        (click)="changeLightboxImage('image-product-2.jpg')"
+      />
+      <img 
+        src="image-product-3-thumbnail.jpg" 
+        alt="Product 3 Thumbnail" 
+        class="thumbnail" 
+        (click)="changeLightboxImage('image-product-3.jpg')"
+      />
+      <img 
+        src="image-product-4-thumbnail.jpg" 
+        alt="Product 4 Thumbnail" 
+        class="thumbnail" 
+        (click)="changeLightboxImage('image-product-4.jpg')"
+      />
+    </div>
+  
+    <!-- Lightbox Modal -->
+    <div *ngIf="isLightboxOpen" class="lightbox-overlay" (click)="closeLightbox()">
+      <div class="lightbox-content" (click)="$event.stopPropagation()">
+        <img src="icon-close.svg" class="close-btn" (click)="closeLightbox()">
+        
+        <!-- Main image in the lightbox -->
+        <img [src]="currentImage2" alt="Full Product Image" class="lightbox-img" /> <!-- Main image in lightbox -->
+        
+        <!-- Thumbnails under the main image -->
+        <div class="thumbnail-container lightbox-thumbnails" id="test">
+          <img 
+            src="image-product-1-thumbnail.jpg" 
+            alt="Product 1 Thumbnail" 
+            class="thumbnail" 
+            (click)="changeLightboxImage('image-product-1.jpg')" 
+          />
+          <img 
+            src="image-product-2-thumbnail.jpg" 
+            alt="Product 2 Thumbnail" 
+            class="thumbnail" 
+            (click)="changeLightboxImage('image-product-2.jpg')"
+          />
+          <img 
+            src="image-product-3-thumbnail.jpg" 
+            alt="Product 3 Thumbnail" 
+            class="thumbnail" 
+            (click)="changeLightboxImage('image-product-3.jpg')"
+          />
+          <img 
+            src="image-product-4-thumbnail.jpg" 
+            alt="Product 4 Thumbnail" 
+            class="thumbnail" 
+            (click)="changeLightboxImage('image-product-4.jpg')"
+          />
+        </div>
+  
+        <!-- Navigation buttons (previous and next) -->
+        <img src="icon-previous.svg" class="prev-btn" (click)="prevImage2()">
+        <img src="icon-next.svg" class="next-btn" (click)="nextImage2()">
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
   <section class="scrolling-picture-of-shoe">
   <img src="icon-previous.svg" alt="previous" id="previous-icon" (click)="prevImage()">
 

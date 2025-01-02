@@ -367,6 +367,184 @@ font-size: 2rem;
   
 
 
+  /* LIGHTHOUSE */  /* LIGHTHOUSE */  /* LIGHTHOUSE */  /* LIGHTHOUSE */  /* LIGHTHOUSE */  /* LIGHTHOUSE */  /* LIGHTHOUSE */
+  /* Make the container take up full width and center the image */
+.scrolling-picture-of-shoe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80%;  /* Adjust as needed */
+    margin: 0 auto; /* Center the section */
+    height: 80vh; /* Full height of viewport */
+  }
+  
+  /* Style the central image */
+  .body-img {
+    max-width: 100%; /* Image should scale with the container */
+    max-height: 80vh; /* Limit the image height */
+    object-fit: contain; /* Ensures image maintains aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transform transition */
+  }
+  
+  /* Style for previous and next icons */
+  #previous-icon, #next-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 50%;
+    padding: 1rem;
+    z-index: 2;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #previous-icon {
+    left: 10px; /* Position to the left */
+  }
+  
+  #next-icon {
+    right: 10px; /* Position to the right */
+  }
+  
+  /* Hover effect for previous and next buttons */
+  #previous-icon:hover, #next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken the background on hover */
+    transform: translateY(-50%) scale(1.1); /* Slightly increase the button size */
+  }
+  
+  /* Optional: Add transition effect to central image when changing */
+  .body-img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+  }
+  
+.scrolling-picture-of-shoe{
+    display: none;
+}
+
+.main-image{
+        width: 35rem;
+        padding-left: 25rem;
+        cursor: pointer;
+
+}
+
+
+.thumbnail-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
+    justify-items: center; /* Centers the thumbnails within each column */
+    margin-top: 20px; /* Space between main image and thumbnails */
+   padding-left: 25rem;
+}
+
+#test{
+    padding-left: 0;
+    gap: 4rem;
+}
+
+/* Individual thumbnail image styling */
+.thumbnail {
+    width: 80px; /* Thumbnail size */
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent; /* No border by default */
+    border-radius: 8px;
+    transition: transform 0.3s ease, border 0.3s ease;
+  }
+  
+  /* Hover effect on thumbnails */
+  .thumbnail:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    border: 2px solid #f60; /* Orange border on hover */
+  }
+  
+  /* Optional: Active thumbnail state when selected */
+  .thumbnail.selected {
+    border: 2px solid #f60; /* Orange border when the image is selected */
+    transform: scale(1.1);
+  }
+  
+
+
+/* Lightbox overlay and content */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Lightbox content (image and buttons) */
+  .lightbox-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .lightbox-img {
+    max-width: 60vw;
+    max-height: 60vh;
+    border-radius: 1rem;
+  }
+  
+  /* Navigation buttons (previous and next) */
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .prev-btn {
+   padding: 1.1rem;
+   background-color: white;
+    top: 43%;
+    left: 5%;
+  }
+  
+  .next-btn {
+    padding: 1.1rem;
+    background-color: white;
+    top: 43%;
+    right: 5%;
+  }
+  
+  /* Close button for lightbox */
+  .close-btn {
+    position: absolute;
+    top: -5%;
+    right: 2%;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #f60;
+    height: 2rem;
+    width: 2rem;
+  }
+
+
+  
+
 }
 
 
@@ -403,6 +581,38 @@ font-size: 2rem;
 
 
 @media (max-width: 768px) {
+
+    .image-galley{
+        display: none !important;
+    }
+
+    .main-image{
+        display: none;
+    }
+
+    .thumbnail{
+        display: none;
+    }
+
+    .cart-count{
+        position: absolute;
+        top: 1.2%;
+        right: 14%;
+        background-color: hsl(26, 100%, 55%); /* Red background for visibility */
+        color: #fff; /* White text */
+        font-size: 0.8rem;
+        font-weight: bold;
+        padding: 0.2rem 0.4rem;
+        border-radius: 50%; /* Circular shape */
+        width: 1rem;
+        height: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for style */
+      }
+    
+
 *{
     margin: 0;
     padding: 0;

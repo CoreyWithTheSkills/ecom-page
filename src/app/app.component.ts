@@ -132,5 +132,57 @@ nextImage(): void {
   }
 
 
+firstImage: string = 'image-product-1.jpg';  // Default main image
+  imagesTwo = {
+    'image-product-1.jpg': 'image-product-1-thumbnail.jpg',
+    'image-product-2.jpg': 'image-product-2-thumbnail.jpg',
+    'image-product-3.jpg': 'image-product-3-thumbnail.jpg',
+    'image-product-4.jpg': 'image-product-4-thumbnail.jpg',
+  };
+
+  changeImage(selectedImage: string) {
+    this.firstImage = selectedImage;
+  }
+
+// Default image for lightbox
+currentImage2: string = 'image-product-1.jpg';
+isLightboxOpen: boolean = false; // Whether the lightbox is open
+images2: string[] = [
+  'image-product-1.jpg',
+  'image-product-2.jpg',
+  'image-product-3.jpg',
+  'image-product-4.jpg'
+];
+currentImageIndex: number = 0;
+
+// Change image based on thumbnail click
+changeLightboxImage(image: string) {
+  this.currentImage2 = image; // Set the image in currentImage2
+  this.currentImageIndex = this.images2.indexOf(image); // Update the index
+}
+
+// Open the lightbox
+openLightbox() {
+  this.isLightboxOpen = true;
+}
+
+// Close the lightbox
+closeLightbox() {
+  this.isLightboxOpen = false;
+}
+
+// Navigate to the previous image in the lightbox
+prevImage2() {
+  this.currentImageIndex = (this.currentImageIndex - 1 + this.images2.length) % this.images2.length;
+  this.currentImage2 = this.images2[this.currentImageIndex]; // Update the current image
+}
+
+// Navigate to the next image in the lightbox
+nextImage2() {
+  this.currentImageIndex = (this.currentImageIndex + 1) % this.images2.length;
+  this.currentImage2 = this.images2[this.currentImageIndex]; // Update the current image
+}
+
+
   
 }
