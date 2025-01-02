@@ -116,6 +116,64 @@
 
 /* MOBILE SCROLLING PICTURE OF SHOE *//* MOBILE SCROLLING PICTURE OF SHOE *//* MOBILE SCROLLING PICTURE OF SHOE */
 
+
+
+/* CART ICON STYLES  */
+.flex-cart{
+  display: flex;
+  padding: 1rem;
+}
+
+.center-cart-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-first-img{
+  width: 4rem;
+  height: 4rem;
+  margin-right: 0.75rem;
+}
+
+.delete-icon{
+  width: 7%;
+  height: 7%;
+  margin-left: 0.75rem;
+}
+
+.checkout-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+ width: 18rem;
+ margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: black; 
+}
+
+.cart-content {
+  background: rgb(239, 236, 236);
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top:12%;
+  right:3%;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Black box shadow */
+}
+
+/* CART ICON STYLES  */
+
 /* LEFT SIDE OF BODY & RIGHT SIDE *//* LEFT SIDE OF BODY & RIGHT SIDE */
 
 body {
@@ -146,7 +204,7 @@ body {
 }
 
 .text-area{
-  max-width: 50%;
+  max-width: 65%;
 }
 
 .main-image {
@@ -196,6 +254,115 @@ body {
   align-items: center;
 }
 
+/* STYLES FOR RIGHT SIDE CONTAINER */
+.sneaker-comapny-h2{
+  font-size: 1rem;
+  color: hsl(219, 9%, 45%);
+  margin-bottom: 1rem;
+}
+
+h1{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.text-area p{
+  padding-top:1rem;
+  color: hsl(219, 9%, 45%);
+  font-size: 1.2rem;
+ 
+}
+
+.price-section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 65%;
+}
+
+.price-left-side{
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.price-left-side h3{
+  font-size: 2rem;
+  }
+
+  .price-left-side span{
+    margin-left: 1rem;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    color: white;
+    background-color: black;
+}
+
+.price-right-side h4{
+  text-decoration: line-through;
+  color: hsl(219, 9%, 45%);
+  font-size: 1.1rem;
+ }
+
+/* STYLES FOR RIGHT SIDE CONTAINER */
+
+
+/* INPUT BOX STYLES/COUNTER */
+
+input{
+  text-align: center;
+}
+
+#counter-number {
+    width: 50%; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height for better proportion */
+    text-align: center; /* Center the text inside */
+    border: 2px solid #ccc; /* Add a subtle border */
+    font-size: 1.5rem; /* Adjust font size */
+    background-color: #f5f5f5; /* Light background color */
+    color: #333; /* Dark text color */
+    font-weight: bold; /* Make the text bold for better visibility */
+    border-radius: 8px; /* Round the corners */
+    padding: 8px; /* Add some padding for a better look */
+    transition: all 0.3s ease; /* Smooth transition on focus */
+  }
+
+/* INPUT BOX STYLES/COUNTER */
+
+
+
+
+.counter-and-add-to-cart{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 65%;
+}
+
+
+/* ADD TO CART BUTTON */
+.last-button button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  width: 18rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: black;
+  height: 55%;
+  overflow: hidden;
+}
+
+
+
+/* ADD TO CART BUTTON *//* ADD TO CART BUTTON */
 
 
 /* LEFT SIDE OF BODY & RIGHT SIDE *//* LEFT SIDE OF BODY & RIGHT SIDE */
